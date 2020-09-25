@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import "./index.css";
+import "./scss/index";
 import App from "./App";
 
 const app = <App />;

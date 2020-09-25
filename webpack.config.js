@@ -1,5 +1,4 @@
 const path = require("path");
-const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
@@ -9,38 +8,18 @@ module.exports = {
     filename: "bundle.js",
     publicPath: "",
   },
-  devtool: "cheap-module-eval-source-map",
   module: {
     rules: [
       { test: /\.js$/, loader: "babel-loader", exclude: /node_modules/ },
+
       {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          { loader: "style-loader" },
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1,
-              modules: {
-                localIdentName: "[name]__[local]__[hash:base64:5]",
-              },
-            },
-          },
-          {
-            loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                ident: "postcss",
-                plugins: () => {
-                  return [autoprefixer()];
-                },
-              },
-            },
-          },
-        ],
+        test: /\.scss$/,
+        loader: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".scss"],
   },
   plugins: [
     new HtmlWebpackPlugin({

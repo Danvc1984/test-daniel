@@ -1,10 +1,9 @@
 {
   "name": "test-agave-daniel",
   "version": "1.0.0",
-  "description": "",
+  "description": "Prueba de single-page-app con React, Redux y Sass",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server"
   },
   "author": "Daniel Bayardo Ramirez",
@@ -16,11 +15,12 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-stage-2": "^7.8.3",
-    "autoprefixer": "^10.0.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.3.0",
     "html-webpack-plugin": "^4.5.0",
+    "node-sass": "^4.14.1",
     "postcss-loader": "^4.0.2",
+    "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
