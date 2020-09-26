@@ -1,0 +1,40 @@
+@import "./../variables.scss";
+
+.item {
+  padding: 0em 1em;
+  background-color: $gray;
+  border: 1px solid #c7dada;
+
+  span {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  h3,
+  h4,
+  p {
+    padding: 4px;
+    margin: 4px;
+  }
+}
+
+.unreadItem {
+  padding: 0em 1em;
+  background-color: $blueBg;
+  border: 1px solid #c7dadab7;
+  border-left: 3px solid $blue;
+  span {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  h3,
+  h4,
+  p {
+    padding: 4px;
+    margin: 4px;
+  }
+  h3 {
+    color: $blue;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../variables";
+.details {
+  background-color: $gray;
+  width: 60%;
+}
+.options {
+  display: flex;
+  padding: 22px;
+  border-bottom: 1px solid #c7dada;
+  justify-content: space-between;
+  button {
+    margin: 0 6px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid #c7dada;
+  }
+}
+#del {
+  font-weight: bold;
+  background-color: $red;
+  color: #fff;
+}
+
+#und {
+  font-weight: bold;
+  background-color: $blue;
+  color: #fff;
+}

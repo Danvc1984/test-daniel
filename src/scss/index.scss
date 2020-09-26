@@ -1,10 +1,10 @@
+@import "./variables";
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
-}
-
-h2 {
-  font-family: serif;
+  font-size: 12px;
+  color: #3b3d3f;
+  background-color: $gray;
 }
