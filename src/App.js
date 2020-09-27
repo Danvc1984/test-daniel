@@ -1,12 +1,14 @@
 import React from "react";
-import "./scss/components/app.scss";
+
 import MailBox from "./containers/MailBox";
 import MailDetail from "./containers/MailDetail";
+import "./scss/app";
+
 const App = () => {
   return (
     <div className="email-client">
-      <MailBox className="list" />
-      <MailDetail className="details" />
+      <MailBox />
+      <MailDetail />
     </div>
   );
 };

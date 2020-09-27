@@ -1,10 +1,11 @@
 import React from "react";
-import "../scss/components/header.scss";
+
+import "../scss/components/header";
 const Header = (props) => {
   return (
     <div className="header">
-      <h2 className="title">{props.mailBox}</h2>
-      <select className="filter" onChange={props.changed}>
+      <h2>{props.mailBox}</h2>
+      <select onChange={props.changed}>
         <option hidden>Filter By</option>
         <option value="Inbox">Inbox</option>
         <option value="Spam">Spam</option>

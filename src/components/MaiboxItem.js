@@ -1,5 +1,6 @@
 import React from "react";
-import "../scss/components/mailboxItem.scss";
+
+import "../scss/components/mailboxItem";
 const MaiboxItem = (props) => {
   let read = props.isRead ? "item" : "unreadItem";
   return (

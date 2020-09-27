@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../scss/components/senderDetails";
 const SenderDetails = (props) => {
   return (
@@ -6,7 +7,6 @@ const SenderDetails = (props) => {
       <div className="imgContainer">
         <img src={props.avatar} alt="Avatar" />
       </div>
-
       <div>
         <h2>
           {props.sender} | {props.subject}

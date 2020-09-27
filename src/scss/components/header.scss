@@ -3,13 +3,11 @@
   flex-flow: row;
   justify-content: space-between;
   border-bottom: 1px solid #c7dada;
-}
-
-.title {
-  margin: 0;
-  padding: 1.3em;
-}
-
-.filter {
-  margin: 1em;
+  select {
+    margin: 1em;
+  }
+  h2 {
+    margin: 0;
+    padding: 1.3em;
+  }
 }

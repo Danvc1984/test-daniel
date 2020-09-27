@@ -1,3 +1,4 @@
+// redux toolkit is the official toolset by the creators of Redux, helps compact the redux logic to one file per "slice" of state
 import { createSlice } from "@reduxjs/toolkit";
 
 const mailSlice = createSlice({
