@@ -5,6 +5,7 @@
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  animation: moveInRight 0.8s ease-out;
   .imgContainer {
     margin-right: 1em;
     margin-left: 6px;
@@ -24,5 +25,21 @@
   h4 {
     margin-top: 5px;
     text-align: right;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
