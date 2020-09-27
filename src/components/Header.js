@@ -4,13 +4,11 @@ const Header = (props) => {
   return (
     <div className="header">
       <h2 className="title">{props.mailBox}</h2>
-      <select className="filter">
-        <option disabled selected>
-          Filter By
-        </option>
-        <option>Inbox</option>
-        <option>Spam</option>
-        <option>Deleted</option>
+      <select className="filter" onChange={props.changed}>
+        <option hidden>Filter By</option>
+        <option value="Inbox">Inbox</option>
+        <option value="Spam">Spam</option>
+        <option value="Deleted">Deleted</option>
       </select>
     </div>
   );

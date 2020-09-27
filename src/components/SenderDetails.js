@@ -1,15 +1,17 @@
 import React from "react";
 import "../scss/components/senderDetails";
-const SenderDetails = () => {
+const SenderDetails = (props) => {
   return (
     <div className="sender">
-      <img
-        src="https://robohash.org/dignissimosetsuscipit.jpg?size=50x50&set=set1"
-        alt="Italian Trulli"
-      />
+      <div className="imgContainer">
+        <img src={props.avatar} alt="Avatar" />
+      </div>
+
       <div>
-        <span>Name----Subject</span>
-        <span>from danvc1984@gmial.cpm</span>
+        <h2>
+          {props.sender} | {props.subject}
+        </h2>
+        <h4>from {props.from}</h4>
       </div>
     </div>
   );

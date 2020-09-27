@@ -1,9 +1,9 @@
 import React from "react";
 import "../scss/components/mailboxItem.scss";
 const MaiboxItem = (props) => {
-  let read = props.isRead == "unread" ? "unreadItem" : "item";
+  let read = props.isRead ? "item" : "unreadItem";
   return (
-    <div className={read}>
+    <div className={read} onClick={props.clicked}>
       <span>
         <h3>{props.sender}</h3>
         <p>{props.sent}</p>

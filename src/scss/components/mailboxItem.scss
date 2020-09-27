@@ -2,7 +2,6 @@
 
 .item {
   padding: 0em 1em;
-  background-color: $gray;
   border: 1px solid #c7dada;
 
   span {
@@ -22,7 +21,7 @@
   padding: 0em 1em;
   background-color: $blueBg;
   border: 1px solid #c7dadab7;
-  border-left: 3px solid $blue;
+  border-left: 4px solid $blue;
   span {
     display: flex;
     flex-flow: row;
@@ -37,4 +36,11 @@
   h3 {
     color: $blue;
   }
+}
+
+.placeholder {
+  margin: auto;
+  text-align: center;
+  font-size: x-large;
+  width: 60%;
 }

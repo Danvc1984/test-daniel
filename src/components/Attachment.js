@@ -1,9 +1,9 @@
 import React from "react";
 
-const Attachment = () => {
+const Attachment = (props) => {
   return (
     <div>
-      <a>image.jpeg</a>
+      <a href={props.file}>{props.name}</a>
     </div>
   );
 };
